@@ -1,0 +1,57 @@
+$grays/gray-100: #f3f6f9;
+$grays/gray-200: #e4e9f2;
+$grays/gray-300: #e4e6ef;
+$grays/gray-400: #d1d3e0;
+$grays/gray-500: #b5b5c3;
+$grays/gray-600: #7e8299;
+$grays/gray-700: #5e6278;
+$grays/gray-800: #3f4254;
+$grays/gray-900: #181c32;
+
+$grays/dark(gray-900): #181c32;
+$grays/dark-hover: #171b30;
+
+$grays/dark-75(gray-800): #3f4254;
+$grays/dark-50(gray-600): #7e8299;
+$grays/dark-25(gray-400): #d1d3e0;
+$grays/dark-65(gray-700): #5e6278;
+
+$text/body-color(dark-75): #3f4254;
+$text/text-muted (gray-600): #7e8299;
+
+$global/white: #ffffff;
+$global/black: #000104;
+$global/subtext: #8f9bb3;
+$global/primary: #c89211;
+$global/primary-hover: #b3820b;
+$global/secondary-hover: #d8dbe8;
+$global/info: #206aea;
+$global/info-light: #f3f7fd;
+$global/info-hover: #1935d0;
+$global/success: #28a745;
+$global/success-light: #f1fcf6;
+$global/success-hover: #219454;
+$global/danger: #e22b2b;
+$global/danger-light: #fdf4f4;
+$global/danger-hover: #c94623;
+$global/warning: #fca800;
+$global/warning-light: #fffaf2;
+$global/warning-hover: #ff7844;
+$global/modal: rgba(#000104, 0.20000000298023224);
+$global/secondary: #e4e6ef;
+
+$primary/primary-900: #624808;
+$primary/primary-800: #78580a;
+$primary/primary-700: #b3820b;
+$primary/primary-600: #b4830f;
+$primary/primary-500: #c89211;
+$primary/primary-400: #d9b358;
+$primary/primary-300: #e9d3a0;
+$primary/primary-200: #f1e4c4;
+$primary/primary-100: #faf4e7;
+
+$maintenance/upper-body: #71d2ec;
+$maintenance/complete-practice: #f0c450;
+$maintenance/lower-body: #eb8d45;
+$maintenance/energy-specific: #a8ce48;
+$maintenance/trunk: #e9403c;

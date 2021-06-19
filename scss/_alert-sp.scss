@@ -1,0 +1,130 @@
+//
+// Base styles
+//
+
+.alert {
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  font-weight: $font-weight-boldest;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  line-height: 1.25;
+  @include border-radius($alert-border-radius);
+}
+
+// Headings for larger alerts
+.alert-heading {
+  // Specified to prevent conflicts of changing $headings-color
+  color: inherit;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  padding-right: $close-font-size + $alert-padding-x * 2;
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: $alert-padding-y $alert-padding-x;
+    color: inherit;
+  }
+}
+
+// Alert Mixin
+@mixin alert-variant-sp($background, $border, $color) {
+  color: $dark-75;
+  background-color: $background;
+  border-color: $border;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+
+  .alert-link {
+    color: $gray-900;
+    text-decoration: underline;
+  }
+
+  .bi {
+    color: $border;
+    margin-right: 0.5rem;
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+@function lightBackground($findColor) {
+  @each $color, $value in $theme-light-colors {
+    @if $findColor == $color {
+      @return $value;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant-sp(
+      lightBackground($color),
+      theme-color-level($color, $alert-border-level),
+      theme-color-level($color, $alert-color-level)
+    );
+  }
+}
+
+// Alert Sizes
+
+// Button sizes
+@mixin alert-size(
+  $padding-y,
+  $padding-x,
+  $font-size,
+  $line-height,
+  $border-radius,
+  $border-width
+) {
+  padding: $padding-y $padding-x;
+  @include font-size($font-size);
+  line-height: $line-height;
+  border-width: $border-width;
+  // Manually declare to provide an override to the browser default
+  @include border-radius($border-radius, 0);
+}
+
+//
+// Button Sizes
+//
+
+.alert-lg {
+  @include alert-size(
+    $alert-padding-y-lg,
+    $alert-padding-x-lg,
+    $alert-font-size-lg,
+    $alert-line-height-lg,
+    $alert-border-radius-lg,
+    $alert-border-width-lg
+  );
+}
+
+.alert-sm {
+  @include alert-size(
+    $alert-padding-y-sm,
+    $alert-padding-x-sm,
+    $alert-font-size-sm,
+    $alert-line-height-sm,
+    $alert-border-radius-sm,
+    $alert-border-width-sm
+  );
+}
