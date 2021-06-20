@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <title>Bootstrap npm starter</title>
+    <title>Street Parking Customisations</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-6">
@@ -20,11 +20,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#buttons">Buttons</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#alerts">Alerts</a>
+          </li>
         </ul>
       </div>
     </nav>
     <div id="top" class="col-md-8 mx-auto mt-20">
-      <h2 id="button">Buttons</h2>
+      <h2 class="h4" id="button">Buttons</h2>
       <div class="container">
         <div class="row mb-4">
           <div class="col-sm">
@@ -70,17 +73,44 @@
             <a href="#" class="btn btn-danger btn-lg">Button Large</a>
           </div>
         </div>
+        <div class="row mb-4">
+          <div class="col-sm">
+            <a href="#" class="btn btn-link btn-sm">Button Small</a>
+          </div>
+          <div class="col-sm">
+            <a href="#" class="btn btn-link">Button Medium</a>
+          </div>
+          <div class="col-sm">
+            <a href="#" class="btn btn-link btn-lg">Button Large</a>
+          </div>
+        </div>
       </div>
 
 
       <hr class="my-5" />
 
-      <h2>Alerts</h2>
+      <h2 class="h4" id="alerts">Alerts</h2>
       <div>
+        <div class="alert alert-primary alert-sm" role="alert">
+          <svg class="bi primary" width="16" height="16">
+            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#info-circle"/>
+          </svg> A simple small primary alert—check it out!
+        </div>
         <div class="alert alert-primary" role="alert">
+          <svg class="bi primary" width="20" height="20">
+            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#info-circle"/>
+          </svg>
           A simple primary alert—check it out!
         </div>
+
+        <div class="alert alert-primary alert-lg" role="alert">
+          <svg class="bi primary" width="24" height="24">
+            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#info-circle"/>
+          </svg>
+          A simple primary large alert—check it out!
+        </div>
         <div class="alert alert-success" role="alert">
+
           A simple success alert—check it out!
         </div>
         <div class="alert alert-danger" role="alert">
