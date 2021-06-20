@@ -1,0 +1,213 @@
+/** Utilies **/
+.icon-button {
+  padding: 0.5em 0.75em;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Pricelist **/
+
+.pricelist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid $primary;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.pricelist-active {
+  background-color: $primary-100;
+}
+
+.pricelist-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  > h6 {
+    margin-bottom: 0;
+  }
+}
+
+.pricelist-text-summary {
+  color: $text-muted;
+}
+
+.pricelist-value {
+  font-size: $h3-font-size;
+  font-weight: $font-weight-boldest;
+}
+
+.pricelist-price {
+  display: flex;
+  > i {
+    color: $primary;
+    font-size: $h6-font-size;
+    line-height: $h6-font-size;
+    vertical-align: middle;
+    padding: 0.75em 0 0.75em 0.5em;
+  }
+}
+
+// summary
+
+.summary {
+  border: 2px solid $info;
+  border-radius: 0.5em;
+  background-color: $info-light;
+}
+
+.summary-header {
+  display: block;
+
+  font-weight: bold;
+
+  > a {
+    display: flex;
+    padding: 0.75em 1em;
+    justify-content: space-between;
+  }
+  > a,
+  i {
+    text-decoration: none;
+    color: $dark-75;
+
+    &:hover {
+      background-color: darken($info-light, 10%);
+      border-radius: 0.375em 0.375em 0 0;
+    }
+  }
+}
+
+.summary-header-closed {
+  border-radius: 0.375em !important;
+}
+
+.summary-header-left {
+  display: flex;
+
+  > i {
+    padding-right: 0.25em;
+  }
+}
+
+.summary-header-right {
+  display: flex;
+
+  > i {
+    padding-left: 0.25em;
+  }
+}
+
+.summary-table-container {
+  padding: 0 1em;
+}
+
+.summary-table {
+  width: 100%;
+  color: $body-color;
+}
+
+.summary-table thead {
+  color: $headings-color;
+  padding-top: 0.25em;
+  font-size: $font-size-sm;
+}
+
+.summary-table tr td {
+  padding: 0.75em 0;
+  color: $body-color;
+  @include media-breakpoint-up(md) {
+    padding: 0.5em 0;
+  }
+}
+
+.summary-total {
+  font-size: $h6-font-size;
+  font-weight: $headings-font-weight;
+  text-align: right;
+}
+
+.summary-price {
+  text-align: right;
+  width: 5em;
+}
+
+.summary-button {
+  width: 48px;
+  text-align: right;
+
+  a {
+    color: $danger;
+    padding: 0.875em;
+    border-radius: 0.25em;
+
+    @include media-breakpoint-up(md) {
+      padding: 0.5em;
+    }
+
+    &:hover {
+      background-color: $danger-hover;
+      color: $white;
+    }
+  }
+}
+
+// Mobile Stepper
+
+.stepper {
+  display: flex;
+  width: 20em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepper-marker {
+  background-color: $gray-100;
+  display: block;
+  font-size: $body-bg;
+  color: $body-color;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 999px;
+}
+
+.stepper-marker-active {
+  background-color: $primary-100;
+  color: $headings-color;
+}
+
+.stepper-marker-complete {
+  background-color: $success-light;
+  color: $success;
+  border: 2px solid $success;
+}
+
+// Current Card
+
+.card-panel {
+  padding: 1em;
+  border: 2px solid $gray-200;
+  border-radius: $border-radius;
+
+  h2 {
+    font-size: $h5-font-size-sm;
+    @include media-breakpoint-up(md) {
+      font-size: $h5-font-size;
+    }
+  }
+}
+
+.card-panel-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em 0;
+}
+
+.card-panel-footer {
+  display: grid;
+  padding-top: 0.5em;
+}

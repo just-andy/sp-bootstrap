@@ -519,7 +519,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
-    // custom breakpoint,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // custom breakpoint,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Grid containers
@@ -729,12 +729,12 @@ $custom-control-indicator-active-box-shadow: none;
 
 // Forms
 $form-group-margin-bottom: 1.75rem;
-$form-label-font-size: 1rem; // Custom variable
-$form-label-font-weight: 400; // Custom variable
-$form-feedback-font-size: 0.9rem; // Custom variable
+$form-label-font-size: $font-size-base; // Custom variable
+$form-label-font-weight: 700; // Custom variable
+$form-feedback-font-size: $font-size-sm; // Custom variable
 $form-feedback-font-weight: 400; // Custom variable
-$form-text-font-size: 0.9rem; // Custom variable
-$form-text-font-weight: 400; // Custom variable
+$form-text-font-size: $font-size-sm; // Custom variable
+$form-text-font-weight: 500; // Custom variable
 $form-validation-input-shadow: false; // Custom variable
 
 // Custom
